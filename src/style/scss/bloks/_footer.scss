@@ -1,0 +1,86 @@
+.footer-holder {
+    position: absolute;
+    background-color: #000;
+    align-items: center;
+    padding: 80px 102px;
+    max-height: 268px;
+    width: 100%;
+
+    @include media('>=768px') {
+        padding: 80px 150px;
+    }
+
+    @include media('>=1024px') {
+        padding: 80px 214px;
+    }
+
+    .pseudo-title {
+        font-family: $font-family;
+        color: $white;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.2em;
+        text-align: center;
+    }
+
+    .social-icon {
+       margin: 0;
+       display: flex;
+       flex-wrap: wrap;
+       text-align: center;
+
+       ul {
+        margin: auto;
+       }
+
+       li {
+        float: left;
+        padding: 16px;
+       }
+
+        .icon-facebook-f {
+            color: $white;
+            font-size: 32px;
+
+            &:hover {
+                color: rgb(27, 87, 216);
+            }
+        }
+
+        .icon-twitter {
+            color: $white;
+            font-size: 32px;
+
+            &:hover {
+                color: rgb(64, 108, 205);
+            }
+        }
+
+        .icon-linkedin {
+            color: $white;
+            font-size: 32px;
+
+            &:hover {
+                color: rgb(83, 134, 242);
+            }
+        }
+
+        .icon-youtube {
+            color: $white;
+            font-size: 32px;
+
+            &:hover {
+                color: rgb(243, 7, 7);
+            }
+        }
+
+        .icon-pinterest {
+            color: $white;
+            font-size: 32px;
+
+            &:hover {
+                color: rgb(203, 27, 27);
+            }
+        }
+    }
+}

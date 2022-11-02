@@ -9,25 +9,10 @@
     <title>Travel</title>
 </head>
 <body>
-    <header>
-        <section class="bg-header">
-            <h1>Bhromaon</h1>
-            <div class="pseudo-title">
-                <span>Safe Travel Anywhere</span>
-            </div>
-            <form action="">
-                <input type="text" name="search" placeholder="Search Your Travel Destination">
-                <a class="btn" href="#"><i class="icon-search"></i>Search</a>
-            </form>
-            <div class="scroll">
-                <a class="scroll-link" href="#explore">Scroll Down
-                    <i class="icon-chevron-down"></i>
-                </a>
-            </div>      
-        </section>
-        <section class="header">
+    <header class="header">
+        <section>
             <div class="logo">
-                <h2>Bhromaon</h2>
+                <h1>Bhromaon</h1>
             </div>
             <div class="nav-holder js-nav-holder">
                 <nav class="nav">
@@ -44,20 +29,37 @@
             </button>
         </section>
     </header>
-    <main>
+    <main class="main">
+        <section class="form" style="background-image: url('./src/img/header-bg.jpg');">
+            <h2>Bhromaon</h2>
+             <div class="pseudo-title">
+                <span>Safe Travel Anywhere</span>
+             </div>
+             <form action="">
+                <input type="text" name="search" placeholder="Search Your Travel Destination">
+                <a class="btn" href="#"><i class="icon-search"></i>Search</a>
+             </form>
+             <div class="scroll">
+                <a class="scroll-link" href="#explore">Scroll Down
+                    <i class="icon-chevron-down"></i>
+                </a>
+             </div>    
+        </section>
         <section class="explore" id="explore" style="background-image: url('./src/img/bg1.jpg');">
             <div class="image-row">
                 <div class="img-column">
-                   <picture>
-                    <source media="(min-width: 768px)" srcset="./src/img/img2.jpg">
-                    <img class="img1" src="./src/img/img1mob.jpg">
-                   </picture>
+                    <img src="./src/img/img1.jpg">
+                   <!--<picture>
+                    <source class="img1" media="(min-width: 768px)" srcset="./src/img/img2.jpg">
+                    <img  src="./src/img/img1mob.jpg">
+                   </picture> -->
                 </div>
                 <div class="img-column">
-                    <picture>
-                        <source media="(min-width: 768px)" srcset="./src/img/img1.jpg">
-                        <img class="img2" src="./src/img/img2mob.jpg">
-                    </picture>
+                    <img src="./src/img/img2.jpg">
+                    <!-- <picture>
+                        <source class="img2" media="(min-width: 768px)" srcset="./src/img/img1.jpg">
+                        <img  src="./src/img/img2mob.jpg">
+                    </picture> -->
                 </div>
             </div>
             <div class="text-holder">
@@ -66,14 +68,16 @@
                     <p>Tion and dislike men who are so beguiled and demoralized by desire by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee
                         <br><br>Ddislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that.</p>
                 </div>
-                <button class="btn-two">Explore Places </button>
+                <a href="#"class="btn-two">Explore Places</a>
             </div>
         </section>
         <section class="icon">
             <div class="icon-box">
                 <ul>
                     <li><i class="icon-search"></i>Search Places</li>
+                    <li><div class="line-top"></div></li>
                     <li><i class="icon-check-circle"></i>Select Places</li>
+                    <li><div class="line-top"></div></li>
                     <li><i class="icon-thumbs-up"></i>Book & Enjoy</li>
                 </ul>
             </div>
@@ -85,7 +89,7 @@
                 <div class="txt">
                     <p>But I must explain to you how all this mistaken idea of account to denouncing pleasure and praising pain was account  born and I account will give you a complete account of the system</p>
                 </div>
-                <button class="btn-two">book now</button>
+                    <a href="#"class="btn-two">book now</a>
             </div>
         </section>
         <section class="spain" style="background-image: url('./src/img/img4.jpg');">
@@ -95,7 +99,7 @@
                 <div class="txt">
                     <p>But I must explain to you how all this mistaken idea of account to denouncing pleasure and praising pain was account  born and I account will give you a complete account of the system</p>
                 </div>
-                <button class="btn-two">book now</button>
+                    <a href="#"class="btn-two">book now</a>
             </div>
         </section>
         <section class="sam" style="background-image: url('./src/img/bg2.jpg');">
@@ -110,17 +114,22 @@
         </section>
     </main>
     <footer class="footer-holder">
-        <h2>Bhromaon</h2>
+        <h5>Bhromaon</h5>
         <div class="pseudo-title">
             <span>Safe Travel Anywhere</span>
         </div>
         <div class="social-icon">
             <ul>
-                <li><i class="icon-facebook-f"></i></li>
-                <li><i class="icon-twitter"></i></li>
-                <li><i class="icon-linkedin"></i></li>
-                <li><i class="icon-youtube"></i></li>
-                <li><i class="icon-pinterest"></i></li>
+                <li>
+                    <a href="https://www.facebook.com/"><i class="icon-facebook-f"></i></a></li>
+                <li>
+                    <a href="https://twitter.com/"><i class="icon-twitter"></i></a></li>
+                <li>
+                    <a href="https://www.linkedin.com/"><i class="icon-linkedin"></i></a></li>
+                <li>
+                    <a href="https://www.youtube.com/"><i class="icon-youtube"></i></a></li>
+                <li>
+                    <a href="https://pinterest.com/"><i class="icon-pinterest"></i></a></li>
             </ul>
         </div>
     </footer>

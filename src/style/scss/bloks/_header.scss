@@ -1,104 +1,28 @@
-.bg-header {
-    position: relative;
-    background-image: url('../../img/header-bg.jpg');
-    height: 862px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    .pseudo-title {
-        font-family: $font-family;
-        color: $white;
-        font-weight: 400;
-        font-size: 22px;
-        line-height: 28px;
-        letter-spacing: 0.31em;
-        text-align: center;
-        margin: 0;
-        padding: 4px 0 48px;
-    }
-
-    form {
-        position: static;
-        max-width: 540px;
-        height: 60px;
-        left: 18px;
-        top: 431px;
-        width: 100%;
-        background-color: $white;
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: flex-start;
-        margin: 0;
-        padding: 5px;
-        align-items: center;
-
-        @include media('>=768px') {
-            max-width: 647px;
-        }
-
-        input {
-            width: 277px;
-            margin-left: 36px;
-            font-weight: 400;
-            font-family: $font-family;
-            font-size: 14px;
-            line-height: 20px;
-            letter-spacing: 0.2em;
-            color: #999999;
-            border: none;
-        }
-
-        .btn {
-            display: inline-block;
-            text-align: center;
-            width: 139px;
-            height: 52px;
-            padding: 16px 24px;
-            background-color: $blue;
-            margin-left: auto;
-            text-decoration: none;
-
-            i {
-                margin-right: 1em;
-            }
-        }
-    }
-
-    .scroll {
-        margin-top: auto;
-        padding-bottom: 120px;
-
-        i {
-            display: block;
-        }
-
-        .scroll-link {
-            text-transform: none;
-            font-weight: 400;
-            font-size: 14px;
-            line-height: 20px;
-            letter-spacing: 0.2em;
-        }
-    }
-}
-
 .header {
-    position: relative;
+    min-height: 105px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     background-color: $blue;
+    z-index: 1;
 
     @include media('>=1024px') {
+        min-height: 70px;
         display: flex;
         flex-wrap: wrap;
+        justify-content: flex-start;
+        padding: 0;
+        margin: 0;
     }
 
     .logo {
         max-width: 168px;
         text-align: left;
-        padding: 1px 32px;
+        padding: 16px;
         margin: 0;
     }
 
@@ -118,10 +42,21 @@
         opacity: 0;
         visibility: hidden;
 
+        @include media('>=768px') {
+            opacity: 1;
+            visibility: visible;
+            box-shadow: none;
+            margin: -16px;
+            
+        }
+
         @include media('>=1024px') {
             opacity: 1;
             visibility: visible;
             box-shadow: none;
+            justify-content: flex-end;
+            padding-right: 32px;
+            top: 100%;
             }
 
         
@@ -166,11 +101,18 @@
         border: none;
         outline: none;
         position: relative;
-        width: 40ppx;
+        width: 40px;
         height: 25px;
-        max-width: calc(100% - 168px);
+        display: flex;
+        
+        //max-width: calc(100% - 168px);
         float: right;
-        margin: -7% 1em auto;
+        margin-right: auto;
+        //margin: -25% -32em auto;
+
+        @include media('>=768px') {
+            display: none;
+        }
 
         @include media('>=1024px') {
             display: none;

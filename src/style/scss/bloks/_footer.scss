@@ -2,18 +2,10 @@
     position: absolute;
     background-color: #000;
     align-items: center;
-    padding: 80px 102px;
+    //padding: 80px 102px;
     max-height: 268px;
     width: 100%;
-
-    @include media('>=768px') {
-        padding: 80px 150px;
-    }
-
-    @include media('>=1024px') {
-        padding: 80px 214px;
-    }
-
+    
     .pseudo-title {
         font-family: $font-family;
         color: $white;
